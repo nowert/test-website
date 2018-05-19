@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Personal Project</title>
+        <link rel="icon" type="image/png" href="icon/lemon.png">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+<body>
+    <section>
+<div class="a">
+<header>          
+<ul class="menu" id="font">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a class="active" href="content.html">Gallery</a></li>
+        <li><a href="Myapp.html">Application</a></li>
+
+<ul>
+    <p Align=right><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>&emsp;
+    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>&emsp;&emsp;</p>
+    
+</ul>
+
+      <div id="id01" class="modal">
+              
+        <form class="modal-content animate" action="/action_page.php">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <center><img src="Pictures/avatar.png" alt="Avatar" class="avatar" width="20%" height="20%"></center>
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+            <p> <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label></p>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+           <p Align="left"> <span class="psw">&emsp;&emsp;&emsp;&emsp;Forgot <a href="#">password?</a></span></p>
+           <br><p id="er"><u>หมายเหตุ</u>&emsp;&emsp;ระบบยังไม่สามารถใช้งานได้</p>
+          </div>
+        </form>
+      </div>
+      
+      <div id="id02" class="modal">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form class="modal-content" action="/action_page.php">
+              <div class="container">
+                <b><h1>Sign Up</h1></b>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+          
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                
+                <label>
+                 <p> <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label></p>
+          
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+          
+                <div class="clearfix">
+                  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn" id="err">Cancel</button>
+                  <button type="submit" class="signupbtn" id="err">Sign Up</button>
+                  <br><br><p id="er"><u>หมายเหตุ</u>&emsp;&emsp;ระบบยังไม่สามารถใช้งานได้</p>
+                </div>
+              </div>
+            </form>
+          </div>
+      <script src="js/index.js"></script>
+        </ul>
+</div>
+</header>
+<main id="backcon">
+    <div class="Gallery">
+       <div class="GallerySlides">
+        <div class="w3-content w3-display-container" style="max-width:800px">
+                <img class="mySlides" src="Pictures/1.jpg" style="width:100%" height="100%">
+                <img class="mySlides" src="Pictures/3.jpg" style="width:100%" height="100%">
+                <img class="mySlides" src="Pictures/4.jpg" style="width:100%" height="100%">
+                <img class="mySlides" src="Pictures/5.jpg" style="width:100%" height="100%">
+                <img class="mySlides" src="Pictures/6.jpg" style="width:100%" height="100%">
+                <img class="mySlides" src="Pictures/7.jpg" style="width:100%" height="100%">
+                <img class="mySlides" src="Pictures/8.jpg" style="width:100%" height="100%" >
+                <img class="mySlides" src="Pictures/9.jpg" style="width:100%" height="100%">
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                  <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                  <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(8)"></span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(9)"></span>
+                </div>
+              </div>
+              <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+                    
+                    function plusDivs(n) {
+                      showDivs(slideIndex += n);
+                    }
+                    
+                    function currentDiv(n) {
+                      showDivs(slideIndex = n);
+                    }
+                    
+                    function showDivs(n) {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("demo");
+                      if (n > x.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = x.length}
+                      for (i = 0; i < x.length; i++) {
+                         x[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                         dots[i].className = dots[i].className.replace(" w3-white", "");
+                      }
+                      x[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " w3-white";
+                    }
+                    </script>
+            </div>
+            <h2 style="text-align:center">Gallery</h2>
+<div class="img">
+<div class="row">
+  <div class="column">
+    <img src="Pictures/n1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Pictures/n7.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Pictures/n8.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Pictures/n4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal2">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal1-content">
+
+    <div class="mySlides1">
+      <img src="Pictures/n1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+      <img src="Pictures/n7.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+      <img src="Pictures/n8.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides1">
+      <img src="Pictures/n4.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="Pictures/n1.jpg" style="width:100%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Pictures/n7.jpg" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Pictures/n8.jpg" style="width:100%" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Pictures/n4.jpg" style="width:100%" onclick="currentSlide(4)">
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides1");
+  var dots = document.getElementsByClassName("demo");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+        </div>
+        <p id="font" Align=right>Personal Website Project&nbsp;&nbsp;&nbsp; <br>By Jirawat Kakeaw&nbsp;&nbsp;&nbsp;&nbsp;</p> 
+</main>
+<footer>
+    <center> 
+    <div class="icon-footer">
+    <a href="https://web.facebook.com/fiy.speed" target="_blank" ><img src="icon/facebook.png" ></a>
+    <a href="https://www.youtube.com/channel/UCqDMWVfo-NkusQMPhEohCnQ?view_as=subscriber" target="_blank"><img src="icon/youtube.png" ></a>
+    <a href="icon/IDline.jpg" target="_blank"><img src="icon/line.png"  ></a>
+    <a href="https://plus.google.com/u/1/110799389092412764746" target="_blank"> <img src="icon/google-plus.png" ></a>
+    </div>
+    <div class="footer">© 2018 &nbsp; Personal Website Project  
+        <br>icon by <a href="https://www.flaticon.com/" target="_blank" >flaticon</a> &nbsp; 
+        Puctures by <a href="https://pixabay.com/" target="_blank" >pixabay.com</a>
+    </div><br>Not Supported Internet Explorer.
+    </center>
+</footer>
+</section>
+</body>
+</html>
